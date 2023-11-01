@@ -1,425 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-bs-theme="dark">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café De Peshawar</title>
+    <link rel="stylesheet" href="style/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
-
 <body>
-	<!--Header(start)-->
-	<table id="header" border="0" width="100%" height="30%"
-		cellpadding="0" cellspacing="0" bgcolor="#4CAF5">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td>
-							
+    <!-- Header -->
+    <div id="header" style="text-align: center; background-image: url(cafe-background.jpg);" >
+        <img src="cafe-logo.png" alt="Café De Peshawar Logo" style="width: 30%; height: 30%;align-items: center;">
+    </div>
 
-						</td>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-inverse" >
+        <div class="container">
+            <div class="collapse navbar-collapse" id="myNavbar" >
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-						<td>
-							<font face="Verdana" size="6">
-								<b>ATTA ULLAH</b>
-							</font>
-						</td>
+    <!-- Home Section -->
+    <div class="section" id="home">
+        <div class="container-fluid">
+            <div class="home-content">
+                <div class="home-text text-center">
+                    <h2>Welcome to Café De Peshawar</h2>
+                    <p>Enjoy the finest cuisine and coffee in town! We take pride in serving you the best.</p>
+                </div>
+                <!-- Image Gallery for Home -->
+                <div class="home-images">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="cafe-image1.jpg" alt="Café Interior 1" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="cafe-image2.jpg" alt="Café Interior 2" class="img-thumbnail">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="cafe-image3.jpg" alt="Café Interior 3" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-						<td width="15%">
-							
-						</td>
+    <!-- Menu Section -->
+    <div class="section menu" id="menu">
+        <div class="container">
+            <h2 class="text-center">Our Menu</h2>
+            <div class="menu-item row">
+                <!-- Item 1 -->
+                <div class="col-sm-6">
+                    <div class="item">
+                        <h3>Egg and Cheese Sandwich</h3>
+                        <p>A delicious sandwich with scrambled eggs and melted cheese.</p>
+                        <p class="price">899 PKR</p>
+                        <!-- Image for Menu Item 1 -->
+                        <img src="menu-item1.jpg" alt="Egg and Cheese Sandwich" class="img-thumbnail">
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-sm-6">
+                    <div class="item">
+                        <h3>Pancakes Stack</h3>
+                        <p>Fluffy pancakes served with maple syrup.</p>
+                        <p class="price">1250 PKR</p>
+                        <!-- Image for Menu Item 2 -->
+                        <img src="menu-item2.jpg" alt="Pancakes Stack" class="img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-						<td>
-							<a href="#home" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Home
-								</font>
-							</a>
-						</td>
+    <!-- About Us Section -->
+    <div class="section" id="about">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p>Café De Peshawar is your favorite neighborhood café, serving a variety of delightful dishes and beverages. We take pride in offering a cozy and inviting atmosphere for our customers.</p>
+        </div>
+    </div>
 
-						<td>
-							|
-						</td>
+    <!-- Our Team Section -->
+    
+    <div id="team" >
+        <div class="container" >
+            <h2 class="text-center">Our Team</h2>
+            <p>Meet our wonderful team at Café De Peshawar. We are dedicated to providing exceptional service and creating memorable experiences for our valued customers.</p>
+            <!-- Image Gallery for Our Team -->
+            <div class="team-images" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                <!-- Employee Image 1 -->
+                <img src="employee1.jpg" alt="Employee 1"  style="flex: 1; max-width: 25%; height:  auto;">
+                <!-- Employee Image 2 -->
+                <img src="employee4.jpg" alt="Employee 2"  style="flex: 1; max-width: 25%; height:  auto;">
+                <!-- Employee Image 3 -->
+                <img src="employee6.jpg" alt="Employee 3"  style="flex: 1; max-width: 25%; height:  auto;">
+                <!-- Employee Image 4 -->
+                <img src="employee5.jpg" alt="Employee 4"  style="flex: 1; max-width: 25%; height:  auto;">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Us Section -->
+    <div class="section" id="contact">
+        <div class="container-fluid">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Have questions or feedback? Contact us!</p>
+            <!-- Contact Form Container -->
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
 
-						<td>
-							<a href="#About" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									About
-								</font>
-							</a>
-						</td>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
 
-						<td>
-							|
-						</td>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
 
-						<td>
-							<a href="#Resume" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Resume
-								</font>
-							</a>
-						</td>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#portfolio" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									portfolio
-								</font>
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#contact" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Contact
-								</font>
-							</a>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Header(end)-->
-
-	<!--Home(start)-->
-	<table id="home" border="1" width="100%"
-		cellpadding="20" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td align="center" valign="middle">
-							<h3>
-								<font face="Times New Roman"
-									size="10" color="#ffffff">
-									<b> ATTA ULLAH</b>
-                                    <hr color="black">
-                                    Welcome to my Website
-								</font>
-							</h3>
-                            <td width="45%" align="top">
-                                <img src="t2d.jpeg" width="660" height="660" >
-                                
-                            </td>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Home(end)-->
-
-
-	<!--About(start)-->
-	<table id="About" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center"
-							valign="middle" colspan="2">
-							<font face="Verdana" size="7"
-								color="#4CAF50">
-								About Me
-							</font>
-							<hr color="#4CAF50" width="90">
-						</td>
-					</tr>
-
-					<tr>
-						<td width="40%">
-							<img src="a11.jpeg">
-						</td>
-
-						<td width="60%">
-							<font face="Verdana" size="4"
-								color="white">
-							<h4>Thanks for visiting, here 
-								is my story
-								<hr color="black">
-								My name is Atta ullah I am
-                                currently studying data science
-                                and machine learning at UET
-                                my background was not actually from
-                                Mathematics But I changed my fied
-                                two years ago thanks and now I am
-                                a full time Data scientist
-								<hr color="black">
-                                Machine Learning expert
-                                <hr color="grey">
-                                Data Visualization
-                                <hr color="grey"> 
-                                DataBaseSQL Expert
-                                <hr color="grey">
-                                Web Designer
-                                <hr color="grey"></h4>
-							</font>
-						</td>
-					</tr>
-				</table>
-				<hr color="black">
-				<hr color="black">
-				<hr color="black">
-			</td>
-		</tr>
-	</table>
-	<!--About(end)-->
-
-
-	<!--Resume(start)-->
-	<table id="Resume" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center"
-							valign="middle" colspan="2">
-							<font face="Verdana" size="7"
-								color="black">
-								Resume
-                                <hr color="black">
-                                A Datascience student 
-                                done some projects 
-                                which are below
-                                <hr color="black">
-							</font>
-							<hr color="black" width="90">
-						</td>
-					</tr>
-
-					<tr>
-						<td height="10">
-							<font face="Times New Roman"
-								size="5" color="black">
-								<ul>
-									<li>
-										BMI Calculator
-										<a href="#" style="text-decoration:none">
-											 ➲
-										</a>
-									</li>
-									<li>
-										<hr color="#c2c0c3">
-										Calendar
-										<a href="#" style="text-decoration:none">
-											 ➲
-										</a>
-									</li>
-
-									<li>
-										<hr color="#c2c0c3">
-										ChatBot
-										<a href="#" style="text-decoration:none">
-											 ➲
-										</a>
-									</li>
-								</ul>
-								<hr color="#c2c0c3">
-								<hr color="#c2c0c3">
-								<hr color="#c2c0c3">
-								<hr color="#c2c0c3">
-							</font>
-						</td>
-
-						<td width="45%">
-							<img src="t2c.jpeg" alt="Resume" width="500" height="500">
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Resume(end)-->
-
-	<!--Portfolio(start)-->
-	<table id="portfolio" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center" valign="middle">
-							<font face="Verdana" size="7" color="#4CAF50">
-								portfolio
-								<hr color="#4CAF50" width="100">
-							</font>
-						</td>
-					</tr>
-
-					<tr>
-						<td>
-							<font face="Verdana" size="4" color="white">
-								<ul>
-									<li>
-									
-										<ul>
-                                            <font face="Verdana" size="4" color="yellow">	<h2>Project Title: <b>Predicting Customer Churn for a Telecommunication Company</b></h2></font>
-<b>Overview:</b>
-<h3>In this project, I built a machine learning model to predict customer
-    <hr color="black">
-     churn for a telecommunication company. The goal was to identify 
-     <hr color="black">
-     customers who were likely to leave the service in the near future
-     <hr color="black">
-      so that the company could take preemptive action to retain them.
-      <hr color="black">
-</h3>
-
-
-											</li>
-										</ul>
-									</li>
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-										</ul>
-									</li>
-
-								</ul>
-
-							</font>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Achievement(end)-->
-
-
-	<!--Contact(start)-->
-	<table id="contact" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="grey">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center"
-							valign="middle" colspan="2">
-							<font face="Verdana" size="7"
-								color="black">
-								Contact
-							</font>
-							<hr color="black" width="90">
-						</td>
-					</tr>
-
-					<tr>
-						<td align="center" valign="top">
-							<table border="0" width="50%" cellpadding="15"
-								cellspacing="0" align="center" >
-								<tr>
-									<td width="30%">
-										<hr color="black">
-										<font face="Verdana" size="4"
-											color="black">
-											<b>Name</b>   ATTA ULLAH
-										</font>
-									</td>
-								</tr>
-								<tr>
-									<td width="30%">
-										<font face="Verdana" size="4"
-											color="black">
-											<b>Email</b>   au2587289@gmail.com
-										</font>
-									</td>
-								</tr>
-								<tr>
-									<td width="30%">
-										<font face="Verdana" size="4"
-											color="black">
-											<b>Number</b>   +92347-7816742 
-										</font>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Contact(end)-->
-
-
-	<!--Footer1(start)-->
-	<table id="footer" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td width="13%" valign="top">
-							<b>LinkedIn</b>
-							<a href="#" style="text-decoration:none">
-								➲
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td width="13%" valign="top">
-							<b>GitHub</b>
-							<a href="#" style="text-decoration:none">
-								➲ 
-							</a>
-						</td>
-                        <td>
-							|
-                        </td>
-
-						<td width="13%" valign="top">
-							<b>Twitter</b>
-							<a href="#" style="text-decoration:none">
-								➲
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td width="13%" valign="top">
-							<b>Email</b>
-							<a href="#" style="text-decoration:none">
-								➲
-							</a>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-			</td>
-		</tr>
-	</table>
-	<!--Footer2(end)-->
 
 </body>
-
 </html>
